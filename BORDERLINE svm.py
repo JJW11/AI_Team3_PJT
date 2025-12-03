@@ -1,4 +1,4 @@
-# stabled BORDERLINE
+# stabled BORDERLINE with svm
 
 from imblearn.over_sampling import SMOTE, ADASYN
 # SMOTE -> kind 파라미터 지원 중단으로 BorderlineSMOTE 이용
