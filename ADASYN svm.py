@@ -20,10 +20,10 @@ from warnings import simplefilter
 # ignore all future warnings
 warnings.filterwarnings("ignore", category=FutureWarning, module="sklearn", lineno=196)
 # warnings.filterwarnings('ignore')
+
+# 전역 설정: 분류기 및 하이퍼파라미터 설정
 classifier_for_selection = {"svm": svm.SVC(gamma='auto'), "knn": neighbors.KNeighborsClassifier(n_neighbors=5), "rf": RandomForestClassifier(), "tree": tree.DecisionTreeClassifier()}
-
 classifier = "svm"
-
 np.set_printoptions(suppress=True)
 # fold = 5
 neighbor = 5
