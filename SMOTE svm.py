@@ -326,7 +326,7 @@ for inputfile in os.listdir("input_data/"):
         for s in range(10):
             # 1. 기본 SMOTE 적용 및 평가
             smote = SMOTE(k_neighbors=neighbor)
-            smote_train_x, smote_train_y = smote.fit_sample(train_x, train_y)
+            smote_train_x, smote_train_y = smote.fit_resample(train_x, train_y)
             test_x = test_data[:, 0:-1]
             test_y = test_data[:, -1]
 
