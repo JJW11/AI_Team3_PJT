@@ -323,7 +323,7 @@ for inputfile in os.listdir("input_data/"):
         for s in range(10):
             smote = ADASYN(n_neighbors=neighbor)
 
-            smote_train_x, smote_train_y = smote.fit_sample(train_x, train_y)
+            smote_train_x, smote_train_y = smote.fit_resample(train_x, train_y)
             test_x = test_data[:, 0:-1]
             test_y = test_data[:, -1]
 
