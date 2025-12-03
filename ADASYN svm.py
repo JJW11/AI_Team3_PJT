@@ -188,56 +188,56 @@ def separate_data(original_data):
 # 결과 저장용 CSV 파일 생성 및 초기화
 # measure = "pf"
 # for measure in ["auc", "balance", "recall", "pf", "brier"]:
-auc_file = open('ouput_data/ADASYN_svm/'+str(neighbor)+'auc_smote_result_on_'+classifier+'.csv', 'w', newline='')
+auc_file = open('output_data/ADASYN_svm/'+str(neighbor)+'auc_smote_result_on_'+classifier+'.csv', 'w', newline='')
 auc_writer = csv.writer(auc_file)
 auc_writer.writerow(["inputfile", "", "", "", "", "", "", "", "", "", "", "min", "lower", "avg", "median", "upper", "max", "variance"])
 
-balance_file = open('ouput_data/ADASYN_svm/'+str(neighbor)+'balance_smote_result_on_'+classifier+'.csv', 'w', newline='')
+balance_file = open('output_data/ADASYN_svm/'+str(neighbor)+'balance_smote_result_on_'+classifier+'.csv', 'w', newline='')
 balance_writer = csv.writer(balance_file)
 balance_writer.writerow(["inputfile", "", "", "", "", "", "", "", "", "", "", "min", "lower", "avg", "median", "upper", "max", "variance"])
 
-recall_file = open('ouput_data/ADASYN_svm/'+str(neighbor)+'recall_smote_result_on_'+classifier+'.csv', 'w', newline='')
+recall_file = open('output_data/ADASYN_svm/'+str(neighbor)+'recall_smote_result_on_'+classifier+'.csv', 'w', newline='')
 recall_writer = csv.writer(recall_file)
 recall_writer.writerow(["inputfile", "", "", "", "", "", "", "", "", "", "", "min", "lower", "avg", "median", "upper", "max", "variance"])
 
-pf_file = open('ouput_data/ADASYN_svm/'+str(neighbor)+'pf_smote_result_on_'+classifier+'.csv', 'w', newline='')
+pf_file = open('output_data/ADASYN_svm/'+str(neighbor)+'pf_smote_result_on_'+classifier+'.csv', 'w', newline='')
 pf_writer = csv.writer(pf_file)
 pf_writer.writerow(["inputfile", "", "", "", "", "", "", "", "", "", "", "min", "lower", "avg", "median", "upper", "max"])
 
-brier_file = open('ouput_data/ADASYN_svm/'+str(neighbor)+'brier_smote_result_on_'+classifier+'.csv', 'w', newline='')
+brier_file = open('output_data/ADASYN_svm/'+str(neighbor)+'brier_smote_result_on_'+classifier+'.csv', 'w', newline='')
 brier_writer = csv.writer(brier_file)
 brier_writer.writerow(["inputfile", "", "", "", "", "", "", "", "", "", "", "min", "lower", "avg", "median", "upper", "max", "variance"])
 
-mcc_file = open('ouput_data/ADASYN_svm/'+str(neighbor)+'mcc_smote_result_on_'+classifier+'.csv', 'w', newline='')
+mcc_file = open('output_data/ADASYN_svm/'+str(neighbor)+'mcc_smote_result_on_'+classifier+'.csv', 'w', newline='')
 mcc_writer = csv.writer(mcc_file)
 mcc_writer.writerow(["inputfile", "", "", "", "", "", "", "", "", "", "", "min", "lower", "avg", "median", "upper", "max", "variance"])
 
-stable_auc_file = open('ouput_data/ADASYN_svm/'+str(neighbor)+'auc_stable_smote_result_on_'+classifier+'.csv', 'w',
+stable_auc_file = open('output_data/ADASYN_svm/'+str(neighbor)+'auc_stable_smote_result_on_'+classifier+'.csv', 'w',
               newline='')
 stable_auc_writer = csv.writer(stable_auc_file)
 stable_auc_writer.writerow(["inputfile", "", "", "", "", "", "", "", "", "", "", "min", "lower", "avg", "median", "upper", "max", "variance"])
 
-stable_balance_file = open('ouput_data/ADASYN_svm/'+str(neighbor)+'balance_stable_smote_result_on_'+classifier+'.csv', 'w',
+stable_balance_file = open('output_data/ADASYN_svm/'+str(neighbor)+'balance_stable_smote_result_on_'+classifier+'.csv', 'w',
               newline='')
 stable_balance_writer = csv.writer(stable_balance_file)
 stable_balance_writer.writerow(["inputfile", "", "", "", "", "", "", "", "", "", "", "min", "lower", "avg", "median", "upper", "max", "variance"])
 
-stable_recall_file = open('ouput_data/ADASYN_svm/'+str(neighbor)+'recall_stable_smote_result_on_'+classifier+'.csv', 'w',
+stable_recall_file = open('output_data/ADASYN_svm/'+str(neighbor)+'recall_stable_smote_result_on_'+classifier+'.csv', 'w',
               newline='')
 stable_recall_writer = csv.writer(stable_recall_file)
 stable_recall_writer.writerow(["inputfile", "", "", "", "", "", "", "", "", "", "", "min", "lower", "avg", "median", "upper", "max", "variance"])
 
-stable_pf_file = open('ouput_data/ADASYN_svm/'+str(neighbor)+'pf_stable_smote_result_on_'+classifier+'.csv', 'w',
+stable_pf_file = open('output_data/ADASYN_svm/'+str(neighbor)+'pf_stable_smote_result_on_'+classifier+'.csv', 'w',
               newline='')
 stable_pf_writer = csv.writer(stable_pf_file)
 stable_pf_writer.writerow(["inputfile", "", "", "", "", "", "", "", "", "", "", "min", "lower", "avg", "median", "upper", "max", "variance"])
 
-stable_brier_file = open('ouput_data/ADASYN_svm/'+str(neighbor)+'brier_stable_smote_result_on_'+classifier+'.csv', 'w',
+stable_brier_file = open('output_data/ADASYN_svm/'+str(neighbor)+'brier_stable_smote_result_on_'+classifier+'.csv', 'w',
               newline='')
 stable_brier_writer = csv.writer(stable_brier_file)
 stable_brier_writer.writerow(["inputfile", "", "", "", "", "", "", "", "", "", "", "min", "lower", "avg", "median", "upper", "max", "variance"])
 
-stable_mcc_file = open('ouput_data/ADASYN_svm/'+str(neighbor)+'mcc_stable_smote_result_on_'+classifier+'.csv', 'w',
+stable_mcc_file = open('output_data/ADASYN_svm/'+str(neighbor)+'mcc_stable_smote_result_on_'+classifier+'.csv', 'w',
               newline='')
 stable_mcc_writer = csv.writer(stable_mcc_file)
 stable_mcc_writer.writerow(["inputfile", "", "", "", "", "", "", "", "", "", "", "min", "lower", "avg", "median", "upper", "max", "variance"])
